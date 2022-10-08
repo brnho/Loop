@@ -1,0 +1,159 @@
+@use 'base';
+
+.profile-pic {
+	height: 45%;
+	border-radius: 50%
+}
+
+.user-info {
+	padding: 0.4em;
+}
+
+.user-name {
+	color: blue;
+	font-weight: 700;
+}
+
+.date {
+    font-size: 0.9em;
+    color: grey;
+}
+
+.post {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	@extend %box-shadow;
+}
+
+.post:hover {
+	cursor: pointer;
+}
+
+.cmt-container {
+	display: flex;
+	margin-top: .8em;
+}
+
+.cmt-pic {
+	align-self: flex-start;
+}
+
+.cmt-profile-pic {
+	height: 2.4em;
+    border-radius: 50%;
+}
+
+.cmt-name {
+	color: blue;
+	font-weight: 700;
+}
+
+.cmt-text, .cmt-text-input {
+	align-self: flex-start;
+	margin-left: 0.4em;
+    background-color: base.$light-grey;
+    border-radius: 0.6em;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+.cmt-text-input {
+	display: flex;
+}
+
+.cmt-text-input-wrapper {
+	width: 100%;
+}
+
+.cmt-textarea {
+	background-color: base.$light-grey;
+	margin-top: 0em;
+    margin-left: .4em;
+    border-radius: .6em;
+    padding: .5em;
+}
+
+
+
+/* Changing placeholder color shit */
+.cmt-textarea::-webkit-input-placeholder {
+    color: hsl(0, 1%, 50%);
+}
+.cmt-textarea:focus::-webkit-input-placeholder {
+    color: hsl(0, 1%, 80%);
+}
+
+/* Firefox < 19 */
+.cmt-textarea:-moz-placeholder {
+    color: hsl(0, 1%, 50%);
+}
+.cmt-textarea:focus:-moz-placeholder {
+    color: hsl(0, 1%, 80%);
+}
+
+/* Firefox > 19 */
+.cmt-textarea::-moz-placeholder {
+    color: hsl(0, 1%, 50%);
+}
+.cmt-textarea:focus::-moz-placeholder {
+    color: hsl(0, 1%, 80%);
+}
+
+/* Internet Explorer 10 */
+.cmt-textarea:-ms-input-placeholder {
+    color: hsl(0, 1%, 50%);
+}
+.cmt-textarea:focus:-ms-input-placeholder {
+    color: hsl(0, 1%, 80%);
+}
+
+
+
+.cmt-options {
+	margin-left: 0.8em;
+}
+
+.subcomments-container {
+	padding-left: 2.8em;
+}
+
+.post-form-txt {
+	align-self: flex-start;
+    padding: 0.4em 0em;
+    margin-left: 0.3em;
+    font-weight: 600;
+}
+
+/*icon styles*/
+
+.num-comments, .num-likes {
+	color: hsl(0, 1%, 60%);
+	font-size: .9em;
+
+	font-weight: 600;
+}
+
+.num-likes {
+	font-size: .9em;
+}
+
+.num-likes:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.mid-dot {
+	color: hsl(0, 1%, 60%);
+	font-size: 1em;
+	font-weight: 600;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+}
+
+table {
+	display: inline-block;
+}
+
+.post-options-icon {
+	float: right;
+}

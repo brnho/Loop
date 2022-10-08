@@ -1,0 +1,20 @@
+$light-grey: hsl(0, 1%, 96%);
+
+%box-shadow {
+	border-radius: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+	padding: 1em;
+	background-color: white;
+}
+
+#contents { /*top level div*/
+	overflow: hidden;
+}
+
+body {
+	background-color: hsl(195, 99%, 99%);
+}
+
+.container-fluid {
+    margin-top: 5.2em;
+}

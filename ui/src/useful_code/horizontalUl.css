@@ -1,0 +1,20 @@
+.info-container {
+	padding: 1em;
+}
+
+.info-pics {
+	height: 45%;
+	border-radius: 50%;
+}
+
+.info-pic-list {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+}
+
+.info-pic-list li {
+	flex: 1;
+	flex-shrink: 1;
+	text-align: center;
+}

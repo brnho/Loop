@@ -1,0 +1,74 @@
+.post-form-container {
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background-color: white;
+}
+
+#contents {
+  /*top level div*/
+  overflow: hidden;
+}
+
+body {
+  background-color: #fafeff;
+}
+
+.container-fluid {
+  margin-top: 5.2em;
+}
+
+.post-form-header {
+  display: flex;
+}
+
+.pic-flex {
+  align-self: flex-start;
+}
+
+.pic-flex img {
+  height: 2.4em;
+  border-radius: 50%;
+}
+
+.post-form-container {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.text-flex {
+  margin-left: 0.4em;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  padding: 0.5em;
+  width: 100%;
+  font-weight: 700;
+  color: #9a9898;
+}
+
+.text-flex:hover {
+  cursor: pointer;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  max-height: 20em;
+  margin-top: 0.6em;
+}
+
+.post-form-modal-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3em;
+  display: inline;
+}
+
+.modal-open[style] {
+  padding-right: 0px !important;
+}
+
+/*# sourceMappingURL=PostForm.css.map */

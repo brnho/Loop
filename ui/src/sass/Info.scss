@@ -1,0 +1,55 @@
+@use 'base';
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.info-container {
+	padding-right: 6em;
+}
+
+.info-box {
+	@extend %box-shadow
+}
+
+.info-header {
+	margin-bottom: 0.5em;
+}
+
+.info-box .one {
+	float: left;
+	font-weight: 600;
+}
+
+.info-box .two {
+	float: right;
+	font-weight: 600;
+}
+
+.info-pics {
+	border-radius: 50%;
+	height: 2em;
+}
+
+.info-box .btn {
+	float: right;
+}
+
+.about {
+	font-weight: 600;
+}
+
+#hidden, #less {
+	display: none;
+}
+
+#more, #less {
+	font-weight: 600;
+}
+
+#more:hover, #less:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}

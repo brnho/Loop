@@ -1,0 +1,75 @@
+#dropdown-carat {
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background-color: white;
+}
+
+#contents {
+  /*top level div*/
+  overflow: hidden;
+}
+
+body {
+  background-color: #fafeff;
+}
+
+.container-fluid {
+  margin-top: 5.2em;
+}
+
+.carat-icon {
+  color: #9a9898;
+  z-index: 30;
+}
+
+.carat-icon:hover {
+  cursor: pointer;
+}
+
+.dropdown-post {
+  position: absolute;
+  right: 1.5em;
+}
+
+.dropdown-comment {
+  position: absolute;
+  right: 17.4em;
+}
+
+.dropdown-reply {
+  position: absolute;
+  right: 13.7em;
+}
+
+#dropdown-carat {
+  display: none;
+  padding: 0;
+  z-index: 3;
+  color: #676565;
+}
+
+#dropdown-carat:first-child {
+  margin-bottom: 0.4em;
+}
+
+#dropdown-carat div:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+#dropdown-carat div {
+  padding: 0.4em 0.9em;
+}
+
+.transparent-screen {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: auto;
+}
+
+/*# sourceMappingURL=OptionsIcon.css.map */

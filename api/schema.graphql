@@ -1,0 +1,101 @@
+scalar GraphQLDate
+
+type User {
+	_id: ID!
+	name: String!
+	avatarHash: String!
+}
+
+type Subcomment {
+	_id: ID!
+	author: User!
+	index: Int
+	timestamp: GraphQLDate!
+	text: String!
+	likes: [ID]
+}
+
+type Comment {
+	_id: ID!
+	author: User!
+	index: Int
+	timestamp: GraphQLDate!
+	text: String!
+	likes: [ID]
+	subcomments: [Subcomment]
+}
+
+type NewsfeedPost {
+	_id: ID!
+	author: User!
+	index: Int
+	timestamp: GraphQLDate!
+	text: String!
+	numLikes: Int
+	userLiked: Boolean
+	numComments: Int
+}
+
+type SinglePost {
+	_id: ID!
+	author: User!
+	timestamp: GraphQLDate!
+	text: String!
+	numLikes: Int
+	userLiked: Boolean
+	numComments: Int
+}
+
+type PostStats {
+	_id: ID!
+	numLikes: Int
+	userLiked: Boolean
+	numComments: Int
+}
+
+input PostInput {
+	authorId: ID!
+	text: String!
+}
+
+type Group {
+	_id: ID!
+	name: String!
+}
+
+type UserInfo {
+	groups: [Group]
+	avatarHash: String!
+	_id: ID!
+}
+
+type ConvoId {
+	_id: ID!
+}
+
+type Query {
+	userInfo(email: String!): UserInfo!
+	groupPosts(userId: ID!, groupId: ID!, index: Int): [NewsfeedPost]
+	groupMembers(groupId: ID!): [User!]!
+	singlePost_post(userId: ID!, groupId: ID!, postId: ID!): SinglePost
+	singlePost_comments(groupId: ID!, postId: ID!, index: Int): [Comment] 
+	singlePost_subcomments(groupId: ID!, postId: ID!, commentId: ID!, index: Int): [Subcomment] 
+	singlePostStats(userId: ID!, groupId: ID!, postId: ID!): PostStats
+	getPostLikes(groupId: ID!, postId: ID!): [User]
+	getConvoId(user1Id: ID!, user2Id: ID!): ConvoId
+}
+
+type Mutation {
+	createPost(groupId: ID!, post: PostInput!): Boolean!
+	createComment(groupId: ID! postId: ID!, comment: PostInput!): Boolean!
+	createSubcomment(groupId: ID! postId: ID!, commentId: ID! subcomment: PostInput!): Boolean!
+	deletePost(groupId: ID!, postId: ID!): Boolean!
+	deleteComment(groupId: ID!, postId: ID!, commentId: ID!): Boolean!
+	deleteSubcomment(groupId: ID!, postId: ID!, commentId: ID!, subcommentId: ID!): Boolean!
+	likePost(userId: ID!, groupId: ID!, postId: ID!): Boolean!
+	unlikePost(userId: ID!, groupId: ID!, postId: ID!): Boolean!
+	likeComment(userId: ID!, groupId: ID!, postId: ID!, commentId: ID!): Boolean!
+	unlikeComment(userId: ID!, groupId: ID!, postId: ID!, commentId: ID!): Boolean!
+	likeSubcomment(userId: ID!, groupId: ID!, postId: ID!, commentId: ID!, subcommentId: ID!): Boolean!
+	unlikeSubcomment(userId: ID!, groupId: ID!, postId: ID!, commentId: ID!, subcommentId: ID!): Boolean!
+}

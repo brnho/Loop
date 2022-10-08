@@ -1,0 +1,22 @@
+.likeinfo-box {
+  display: flex;
+}
+
+.likeinfo-profile-pic {
+  align-self: flex-start;
+  height: 2.4em;
+  border-radius: 50%;
+}
+
+.likeinfo-name {
+  align-self: flex-start;
+  padding: 0.4em;
+  font-weight: 600;
+}
+
+.likeinfo-divider {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+/*# sourceMappingURL=LikeInfo.css.map */

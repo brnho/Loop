@@ -1,0 +1,34 @@
+.toastMsg {
+  position: fixed;
+  bottom: 75px;
+  left: 90px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0.5em 1.5em;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  opacity: 0.2;
+}
+
+.toastFade {
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/*# sourceMappingURL=Toast.css.map */

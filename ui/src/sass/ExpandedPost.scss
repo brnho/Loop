@@ -1,0 +1,103 @@
+@use 'base';
+
+.commentIcon {
+    text-align: center;
+    color: #9a9898;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-left: .7em;
+    border-radius: 7px;
+}
+
+.commentIcon:hover {
+	cursor: pointer;
+	background-color: hsl(190, 100%, 92%);
+	color: hsl(190, 100%, 40%);	
+}
+
+.likeIcon {
+	text-align: center;
+    color: #9a9898;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-left: 1.5em;
+}
+
+.cmt.likeIcon {
+    margin-left: 0;
+}
+
+.liked {
+    color: hsl(190, 100%, 40%);
+}
+
+.not-liked {
+    color: hsl(0, 1%, 60%);
+}
+
+.likeIcon:hover {
+	cursor: pointer;
+	background-color: hsl(190, 100%, 92%);
+	color: hsl(190, 100%, 40%);
+}
+
+hr {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.expanded-post {
+	@extend %box-shadow;
+	margin-bottom: 1.5em;
+}
+
+.expanded-post-header {
+	margin-left: -1em;
+    margin-right: -1em;
+    margin-top: -1em;
+    background-color: hsl(0, 1%, 90%);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .2em .7em;
+    margin-bottom: .8em;
+}
+
+.expanded-post-x {
+	float: right;
+    color: hsl(0, 1%, 40%);
+}
+
+.expanded-post-x:hover {
+	cursor: pointer;
+}
+
+.cmt-form-modal-header {
+	padding: .2em;
+}
+
+.commentIcon, .num-comments, .likeIcon, .num-likes {
+    z-index: 2;
+}
+
+.cmt-time {
+    margin-left: .7em;
+    margin-right: .6em;
+    color: hsl(0, 1%, 60%);
+    font-size: .9em;
+}
+
+.view-more {
+    margin-top: 0.8em;
+    color: hsl(0, 1%, 50%);
+    font-weight: 600;
+}
+
+.view-more.reply {
+    margin-left: 2.8em;
+}
+
+.view-more:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,71 @@
+.info-box {
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background-color: white;
+}
+
+#contents {
+  /*top level div*/
+  overflow: hidden;
+}
+
+body {
+  background-color: #fafeff;
+}
+
+.container-fluid {
+  margin-top: 5.2em;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.info-container {
+  padding-right: 6em;
+}
+
+.info-header {
+  margin-bottom: 0.5em;
+}
+
+.info-box .one {
+  float: left;
+  font-weight: 600;
+}
+
+.info-box .two {
+  float: right;
+  font-weight: 600;
+}
+
+.info-pics {
+  border-radius: 50%;
+  height: 2em;
+}
+
+.info-box .btn {
+  float: right;
+}
+
+.about {
+  font-weight: 600;
+}
+
+#hidden, #less {
+  display: none;
+}
+
+#more, #less {
+  font-weight: 600;
+}
+
+#more:hover, #less:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=Info.css.map */

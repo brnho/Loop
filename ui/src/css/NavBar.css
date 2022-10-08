@@ -1,0 +1,61 @@
+.chat-tab {
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background-color: white;
+}
+
+#contents {
+  /*top level div*/
+  overflow: hidden;
+}
+
+body {
+  background-color: #fafeff;
+}
+
+.container-fluid {
+  margin-top: 5.2em;
+}
+
+.loop_link, .loop_link:hover {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.chat-toggle {
+  color: white;
+}
+
+.chat-toggle:hover {
+  cursor: pointer;
+}
+
+#chat-tab-span {
+  display: none;
+  position: absolute;
+  right: 13em;
+  top: 4em;
+}
+
+/* <ChatTab /> */
+.chat-tab {
+  width: 20em;
+}
+
+.chat-tab-header {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+
+.transparent-screen-chat {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=NavBar.css.map */
