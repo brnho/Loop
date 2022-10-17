@@ -1,4 +1,4 @@
-CRUD social media style website which supports authenticated user accounts, groups, posts, comments, and likes.
+Social media style website which supports authenticated user accounts and CRUD operations for user groups, posts, comments, and likes.
 
 - Uses MERN stack (MongoDB, Express.js, React, Node)
 - Main React components are inside ui/src/secured/
